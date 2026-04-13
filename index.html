@@ -6,61 +6,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mental Models</title>
 
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 
-<main>
-
-    <header>
-
     <!-- ===================================
     NAV
     =================================== -->
 
-    <div class="nav">
+    <header class="nav">
         <div class="nav_container">
+            <div class="nav_container_content">
 
-            <div class="content_logo-container">
-                <img class="logo" src="assets/logo.svg" alt="mental models logo">
-            </div>
-
-            <div class="content_nav-link-container">
-
-                <div class=".nav-link-container_mode">
-                    <img class="icon" src="assets/dark-mode.svg" alt="dark mode">
+                <!-- LOGO -->
+                <div class="content_logo-container">
+                    <img class="logo" src="assets/logo.svg" alt="mental models logo">
                 </div>
 
-                <div class="nav-link-container_accessibility">
-                    <h4></h4>
+                <!-- MODE -->
+                <div class="content_mode-container">
+                    <img class="icons" src="assets/dark-mode.svg" alt="change display mode">
                 </div>
 
             </div>
 
         </div>
-    </div>
-
-
-
     </header>
-
-
-
-
-
-    <section>
-
+    
     <!-- ===================================
     CONTENT
     =================================== -->
 
+    <main class="content">
+        <div class="content_header">
+            <div class="header_header">
+            <h2>A collection of thinking frameworks that anyone can use to reason more clearly, make better decisions, and understand the world.
+            </h2>
+            </div>
+            <div class="header_sub-header">
+            <p class="b2">Concepts drawn from Farnam Street's Mental Model library. Website design inspired by lawsofux.com.
+            </p>
+            </div>
+        </div>
 
-    <footer>
-        
+        <section class="content_container">
 
-    </footer>
+        <!-- 01 FIRST PRINCIPLES -->
+            <div class="card-container">
+                <div class="card">
+                    <div class="card_header" style="--card-bg: #90643C"></div>
+                    <div class="card_text">
+                        <h4 class="text_header">First Principles</h4>
+                        <div class="text_body">
+                            <p class="b3">Break a problem down to what you know is actually true, then build your answer up from there.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
 
+        <!-- 02 INVERSION -->
+            <div class="card-container">
+                <div class="card">
+                    <div class="card_header" style="--card-bg: #746C5F"></div>
+                    <div class="card_text">
+                        <h4 class="text_header">Inversion</h4>
+                        <div class="text_body">
+                            <p class="b3">Instead of planning for success, ask what would make this fail and work backward from that.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        <!-- 03 SECOND ORDER THINKING -->
+            <div class="card-container">
+                <div class="card">
+                    <div class="card_header" style="--card-bg: #6D6F5B"></div>
+                    <div class="card_text">
+                        <h4 class="text_header">Second-Order Thinking</h4>
+                        <div class="text_body">
+                            <p class="b3">Before deciding, ask "and then what?" Most problems come from only thinking one step ahead.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- 04 Circle of Competence -->
+            <div class="card-container">
+                <div class="card">
+                    <div class="card_header" style="--card-bg: #7C6964"></div>
+                    <div class="card_text">
+                        <h4 class="text_header">Circle of Competence</h4>
+                        <div class="text_body">
+                            <p class="b3">Know where your knowledge actually ends. Operating just past that line is where most bad decisions happen.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        <!-- 05 Occam's Razor -->
+            <div class="card-container">
+                <div class="card">
+                    <div class="card_header" style="--card-bg: #091A36"></div>
+                    <div class="card_text">
+                        <h4 class="text_header">Occam's Razor</h4>
+                        <div class="text_body">
+                            <p class="b3">When you have multiple explanations for something, start with the simplest one that fits the facts.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        <!-- 03 Map vs. Territory -->
+            <div class="card-container">
+                <div class="card">
+                    <div class="card_header" style="--card-bg: #597271"></div>
+                    <div class="card_text">
+                        <h4 class="text_header">Map vs. Territory</h4>
+                        <div class="text_body">
+                            <p class="b3">The way you see a situation is not the situation itself. Your mental picture is always an incomplete version of reality.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
 
     </section>
 
@@ -68,8 +152,3 @@
 
 
 
-
-
-
-
-</main>
