@@ -44,19 +44,23 @@ h4{
     font-style: normal;
     font-weight: 700;
     line-height: var(--fonts-line-height-heading-H4, 25px); /* 131.579% */
+    margin: 0;
 }
 
 p{
     color: var(--grayscale-text-title, #26201E);
+    margin: 0;
 }
 
 .b2{
+    color: var(--grayscale-text-body, #26201E);
+
     /* Body/B2 */
     font-family: var(--fonts-style-body, "General Sans Variable");
-    font-size: var(--fonts-size-body-B2, 0.9375rem);
+    font-size: var(--fonts-size-body-B2, 24px);
     font-style: normal;
     font-weight: 500;
-    line-height: var(--fonts-line-height-body-B2, 1.5rem); /* 160% */
+    line-height: var(--fonts-line-height-body-B2, 38px); /* 158.333% */
 }
 
 .b3{
@@ -87,156 +91,4 @@ p{
 .logo{
     width: 68px;
     height: 68px;
-}
-
-
-/* ===================================
-    NAV
-    =================================== */
-
-.nav{
-    display: flex;
-    height: 120px;
-    padding: 0 var(--nav-margin, 16px);
-    justify-content: center;
-    align-items: center;
-    align-self: stretch;
-    /* border: solid, red; */
-}
-
-.nav_container{
-    display: flex;
-    max-width: 1280px;
-    justify-content: center;
-    align-items: center;
-    flex: 1 0 0;
-    align-self: stretch;
-    /* border: solid black; */
-}
-
-.nav_container_content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1 0 0;
-    align-self: stretch;
-}
-
-/* LOGO */
-.content_logo-container{
-    display: flex;
-    width: 68px;
-    padding: 4px 0;
-    flex-direction: column;
-    align-items: center;
-}
-
-.content_mode-container{
-    display: hide;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 40px;
-}
-
-/* ===================================
-    CONTENT
-    =================================== */
-
-.content{
-    display: flex;
-    padding: 20px var(--home_content-margin, 20px);
-    flex-direction: column;
-    align-items: flex-start;
-    align-self: stretch;
-}
-
-/* ===================================
-    HEADER
-    =================================== */
-
-.content_header{
-    display: flex;
-    padding: 50px var(--home_content_header-margin, 0) 50px 9.8px;
-    flex-direction: column;
-    align-items: flex-start;
-    align-self: stretch;
-}
-
-.header_header{
-    align-self: stretch;
-}
-
-.header_sub-header{
-    align-self: stretch;
-}
-
-/* ===================================
-    MODEL CONTAINER
-    =================================== */
-
-.content_container{
-    display: flex;
-    padding: 40px 0 10px 0;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 10px;
-    align-self: stretch;
-    flex-wrap: wrap;
-}
-
-
-/* ===================================
-    MODEL CARDS
-    =================================== */
-
-.card-container{
-    display: flex;
-    width: var(--card-width, 330px);
-    padding: 9.8px;
-    justify-content: center;
-    align-items: center;
-    gap: 9.8px;
-    /* border:solid black; */
-}
-
-.card{
-    display: flex;
-    height: 487.06px;
-    flex-direction: column;
-    align-items: flex-start;
-    flex: 1 0 0;;
-
-    border-radius: 30.108px;
-    background: var(--grayscale-surface-elevated, #FFF);
-    /* border:solid black; */
-}
-
-.card_header{
-    display: flex;
-    align-items: flex-start;
-    flex: 1 0 0;
-    align-self: stretch;
-    border-radius: 30.108px 30.108px 0 0;
-
-    /* COLOR VARIABLES */
-
-    background: var(--card-bg, #000);
-}
-
-.card_text{
-    display: flex;
-    padding: 20px 10px 20px 17px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 18.065px;
-    flex: 1 0 0;
-    align-self: stretch;
-}
-
-.text_header{
-    align-self: stretch;
-}
-
-.text_body{
-    max-width: var(--card_text_body-min-width, 313px);
 }

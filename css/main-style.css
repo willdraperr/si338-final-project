@@ -1,0 +1,155 @@
+/* ===================================
+    NAV
+    =================================== */
+
+.nav{
+    display: flex;
+    height: 120px;
+    padding: 0 var(--nav-margin, 16px);
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    /* border: solid, red; */
+}
+
+.nav_container{
+    display: flex;
+    max-width: 1280px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+    /* border: solid black; */
+}
+
+.nav_container_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+/* LOGO */
+.content_logo-container{
+    display: flex;
+    width: 68px;
+    padding: 4px 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content_mode-container{
+    display: hide;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+}
+
+/* ===================================
+    HOME CONTENT
+    =================================== */
+
+.content{
+    display: flex;
+    padding: 20px var(--home_content-margin, 20px);
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+/* ===================================
+    HEADER
+    =================================== */
+
+.content_header{
+    display: flex;
+    padding: 50px var(--home_content_header-margin, 0) 50px 9.8px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.header_header{
+    align-self: stretch;
+}
+
+.header_sub-header{
+    align-self: stretch;
+}
+
+/* ===================================
+    MODEL CONTAINER
+    =================================== */
+
+.content_container{
+    display: flex;
+    padding: 40px 0 10px 0;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+/* ===================================
+    MODEL CARDS
+    =================================== */
+
+.card-container{
+    display: flex;
+    width: var(--card-width, 330px);
+    padding: 9.8px;
+    justify-content: center;
+    align-items: center;
+    gap: 9.8px;
+    /* border:solid black; */
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: contents; /* lets the card-container behave as if the <a> tag isn't there */
+}
+
+.card{
+    display: flex;
+    height: 487.06px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;;
+
+    border-radius: 30.108px;
+    background: var(--grayscale-surface-elevated, #FFF);
+    /* border:solid black; */
+}
+
+.card_header{
+    display: flex;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 30.108px 30.108px 0 0;
+
+    /* COLOR VARIABLES */
+
+    background: var(--card-bg, #000);
+}
+
+.card_text{
+    display: flex;
+    padding: 20px 10px 20px 17px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18.065px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.text_header{
+    align-self: stretch;
+}
+
+.text_body{
+    max-width: var(--card_text_body-min-width, 313px);
+}
