@@ -33,7 +33,7 @@
 
                 <!-- MODE -->
                 <div class="content_mode-container">
-                    <img class="icons" src="assets/dark-mode.svg" alt="change display mode">
+                    <img class="icons" src="assets/dark-mode-black.svg" alt="change display mode">
                 </div>
 
                 
@@ -207,5 +207,39 @@
         </a>
 
         </section>
+
+    <!-- ===================================
+    FOOTER
+    =================================== -->
+
+    <footer class="footer">
+        <article class="b3">
+            Will Draper 2026
+        </article>
+    </footer>
+
+<script>
+  // Restore preference on page load
+  if (localStorage.getItem('theme') === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    document.querySelector('.content_mode-container img').src = 'assets/light-mode-white.svg';
+  }
+
+  const toggleBtn = document.querySelector('.content_mode-container img');
+
+  toggleBtn.addEventListener('click', function () {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+
+    if (isDark) {
+      document.documentElement.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'light');
+      this.src = this.src.replace('light-mode-white.svg', 'dark-mode-black.svg');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+      this.src = this.src.replace('dark-mode-black.svg', 'light-mode-white.svg');
+    }
+  });
+</script>
 
     </main>

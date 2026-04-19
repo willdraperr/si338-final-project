@@ -1,3 +1,44 @@
+/* style.css */
+
+/* ===================================
+    GRAYSCALE PALETTE
+    =================================== */
+
+:root {
+    --grayscale-00:  #FFFFFF;
+    --grayscale-50:  #F3F0EE;
+    --grayscale-100: #EAE4E1;
+    --grayscale-200: #D6CAC1;
+    --grayscale-300: #C1AD9F;
+    --grayscale-400: #A69589;
+    --grayscale-500: #8D7F74;
+    --grayscale-600: #74675F;
+    --grayscale-700: #5D524B;
+    --grayscale-800: #463E39;
+    --grayscale-900: #2F2824;
+    --grayscale-950: #26201E;
+
+    /* semantic tokens — light mode defaults */
+    --grayscale-surface-default:   var(--grayscale-50);
+    --grayscale-surface-elevated:  var(--grayscale-00);
+    --grayscale-surface-negative:  var(--grayscale-950);
+    --grayscale-border-default:    #FFFFFF;
+    --grayscale-text-title:        var(--grayscale-950);
+    --grayscale-text-body:         var(--grayscale-950);
+    --grayscale-text-negative:     var(--grayscale-50);
+}
+
+/* dark mode — swap semantic tokens */
+[data-theme="dark"] {
+    --grayscale-surface-default:   var(--grayscale-950);
+    --grayscale-surface-elevated:  var(--grayscale-700);
+    --grayscale-surface-negative:  var(--grayscale-50);
+    --grayscale-border-default:    #FFFFFF;
+    --grayscale-text-title:        var(--grayscale-50);
+    --grayscale-text-body:         var(--grayscale-50);
+    --grayscale-text-negative:     var(--grayscale-950);
+}
+
 /* ===================================
     FONTS
     =================================== */
@@ -14,12 +55,18 @@
     VARIABLES
     =================================== */
 
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background: var(--grayscale-surface-default, #F3F0EE);
+h1{
+    color: #F3F0EE;
+    text-align: center;
+
+    /* Heading/H1 */
+    font-family: var(--fonts-style-heading, "Source Serif 4");
+    font-size: var(--fonts-size-heading-H1, 40px);
+    font-style: normal;
+    font-weight: 900;
+    line-height: var(--fonts-line-height-heading-H1, 52px); /* 130% */
 }
+
 
 h2{
     color: var(--grayscale-text-title, #26201E);
@@ -30,6 +77,17 @@ h2{
     font-style: normal;
     font-weight: 500;
     line-height: var(--fonts-line-height-heading-H2, 41px); /* 132.258% */
+}
+
+h3{
+    color: var(--grayscale-surface-negative, #26201E);
+
+    /* Heading/H3 */
+    font-family: var(--fonts-style-heading, "Source Serif 4");
+    font-size: var(--fonts-size-heading-H3, 25px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--fonts-line-height-heading-H3, 32px); /* 128% */
 }
 
 h4{
@@ -47,9 +105,53 @@ h4{
     margin: 0;
 }
 
+h5{
+    color: var(--grayscale-surface-negative, #26201E);
+
+    /* Heading/H5 */
+    font-family: var(--fonts-style-heading, "Source Serif 4");
+    font-size: var(--fonts-size-heading-H5, 15px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--fonts-line-height-heading-H5, 20px); /* 133.333% */
+}
+
+.section-heading {
+    color: var(--grayscale-surface-negative, #26201E);
+    font-family: var(--fonts-style-heading, "Source Serif 4");
+    font-size: var(--fonts-size-heading-H3, 25px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--fonts-line-height-heading-H3, 32px);
+}
+
+
+
+
 p{
     color: var(--grayscale-text-title, #26201E);
     margin: 0;
+}
+
+.b1-big{
+    color: var(--grayscale-surface-negative, #26201E);
+
+    /* Body/B1-Big */
+    font-family: var(--fonts-style-body, "General Sans Variable");
+    font-size: var(--fonts-size-heading-H3, 25px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--fonts-size-heading-H1, 40px); /* 160% */
+}
+
+
+.b1 {
+    color: var(--grayscale-text-body, #26201E);
+    font-family: var(--fonts-style-body, "General Sans Variable");
+    font-size: var(--fonts-size-body-B1, 19px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--fonts-line-height-body-B1, 31px);
 }
 
 .b2{
@@ -57,10 +159,11 @@ p{
 
     /* Body/B2 */
     font-family: var(--fonts-style-body, "General Sans Variable");
-    font-size: var(--fonts-size-body-B2, 24px);
+    font-size: var(--fonts-size-body-B2, 15px);
     font-style: normal;
     font-weight: 500;
-    line-height: var(--fonts-line-height-body-B2, 38px); /* 158.333% */
+    line-height: var(--fonts-line-height-body-B2, 24px); /* 160% */
+
 }
 
 .b3{
@@ -72,9 +175,6 @@ p{
     font-style: normal;
     font-weight: 500;
     line-height: var(--fonts-line-height-body-B3, 19px); /* 158.333% */
-
-
-    color: var(--grayscale-text-body, #26201E);
 }
 
 /* ===================================
@@ -91,4 +191,17 @@ p{
 .logo{
     width: 68px;
     height: 68px;
+}
+
+/* ===================================
+    FOOTER
+    =================================== */
+
+.footer{
+    display: flex;
+    padding: 70px 0 30px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
 }
