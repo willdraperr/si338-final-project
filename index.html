@@ -50,12 +50,12 @@
     <main class="content">
         <div class="content_header">
             <div class="header_header">
-            <h2>A collection of thinking frameworks that anyone can use to reason more clearly, make better decisions, and understand the world.
-            </h2>
+                <h2>A collection of thinking frameworks that anyone can use to reason more clearly, make better decisions, and understand the world.
+                </h2>
             </div>
             <div class="header_sub-header">
-            <p class="b2">Concepts drawn from Farnam Street's Mental Model library. Website design inspired by lawsofux.com.
-            </p>
+                <p class="b2">Concepts drawn from <a href="https://fs.blog/category/mental-models/" target="_blank" style="color: inherit; text-decoration: underline;">Farnam Street's Mental Model library</a>. Website design inspired by <a href="https://lawsofux.com/" target="_blank" style="color: inherit; text-decoration: underline;">lawsofux.com</a>.
+                </p>
             </div>
         </div>
 
@@ -214,7 +214,9 @@
 
     <footer class="footer">
         <article class="b3">
-            Will Draper 2026
+            <a href="https://www.willdraper.me/" target="_blank" style="color: inherit; text-decoration: none;">
+                Will Draper 2026
+            </a>
         </article>
     </footer>
 
@@ -240,6 +242,12 @@
       this.src = this.src.replace('dark-mode-black.svg', 'light-mode-white.svg');
     }
   });
+
+    document.querySelectorAll('.card').forEach(el => {
+        el.style.transition = 'transform 0.2s ease';
+        el.addEventListener('mouseenter', () => el.style.transform = 'scale(1.02)');
+        el.addEventListener('mouseleave', () => el.style.transform = 'scale(1)');
+    });
 </script>
 
     </main>

@@ -28,18 +28,11 @@ body {
 
 .header-content{
     display: flex;
-    padding: 20px var(--model_header-margin, 20px);
-    justify-content: space-between;
+    padding: var(--model_header-padding, 70px) var(--model_header-margin, 20px);
+    justify-content: center;
     align-items: center;
     align-self: stretch;
-}
 
-.mobile-header{
-    display: flex;
-    width: var(--model_illustration-size, 346px);
-    flex-direction: column;
-    align-items: center;
-    gap: 72px;
 }
 
 /* ===================================
@@ -98,14 +91,6 @@ body {
     border-radius: 20px;
     background: var(--grayscale-surface-default, #F3F0EE);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.20);
-}
-
-/* ===================================
-    MOBILE HEADER
-    =================================== */
-
-.mobile-header_text{
-    align-self: stretch;
 }
 
 /* ===================================
@@ -189,7 +174,6 @@ body {
 
 .insight_number-container{
     display: flex;
-    width: 24px;
     height: var(--model_insight_number-container-size, 24px);
     justify-content: center;
     align-items: center;
@@ -293,14 +277,14 @@ body {
     align-self: stretch;
 }
 
-.source{
+.source {
     display: flex;
     padding: 20px 40px;
     align-items: center;
     align-self: stretch;
 
     border-radius: 20px;
-    border-left: 10px solid #647E7D;
+    border-left: 10px solid var(--source-accent, #647E7D);
     background: var(--grayscale-surface-elevated, #FFF);
 }
 
@@ -315,4 +299,38 @@ body {
     align-self: stretch;
 }
 
+/* ===================================
+    INTERACTIONS
+    =================================== */
 
+/* BACK BUTTON HOVER */
+.back-button {
+    transition: transform 0.2s ease;
+}
+
+.back-button:hover {
+    transform: scale(1.03);
+}
+
+/* DARK/LIGHT MDOE HOVER */
+.content_mode-container img {
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.content_mode-container img:hover {
+    transform: scale(1.1);
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* FURTHER READING HOVER */
+.source {
+    transition: transform 0.2s ease;
+}
+
+.source:hover {
+    transform: scale(1.01);
+}

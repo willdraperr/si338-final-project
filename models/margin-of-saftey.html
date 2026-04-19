@@ -1,25 +1,263 @@
+<!-- margin-of-safety.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Principles</title>
+    <title>Margin of Safety</title>
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
 
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-
-
+    <link rel="stylesheet" href="../css/model-style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
 
 </head>
 
-<main>
+<body>
 
+    <!-- ===================================
+    HEADER
+    =================================== -->
 
-</main>
+    <header class="header" style="--card-bg: #836B12">
+
+        <div class="header_nav">
+            <div class="nav">
+                <div class="nav_container">
+                    <div class="nav_container_content">
+                        <div class="content_button-container">
+                            <a href="../index.html" class="back-button">
+                                <img class="icons" src="../assets/left-arrow-black.svg" alt="back to">
+                                <div class="b2">Back</div>
+                            </a>
+                        </div>
+
+                        <div class="content_mode-container">
+                            <img class="icon" src="../assets/dark-mode-white.svg" alt="dark mode">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="header-content">
+                <h1>
+                    Margin of Safety
+                </h1>
+            </div>
+        </div>
+
+        <div class="header-content"></div>
+
+    </header>
+
+    <!-- ===================================
+    CONTENT
+    =================================== -->
+
+    <section class="content">
+
+        <div class="content_text">
+
+            <!-- ===================================
+            CORE IDEA
+            =================================== -->
+
+            <div class="text_core-idea">
+                <div class="core-idea_text">
+                    <article class="b1-big">
+                        Always leave more room for error than you think you need. Things rarely go exactly as planned.
+                    </article>
+                </div>
+            </div>
+
+            <!-- ===================================
+            KEY INSIGHTS
+            =================================== -->
+
+            <div class="text_key-insights">
+                <div class="key-insights_header section-heading">
+                    Key Insights
+                </div>
+                <div class="key-insights_container">
+
+                    <!-- GROUP 1/2 -->
+                    <div class="container_group">
+
+                        <!-- INSIGHT 1 -->
+                        <div class="group_insight">
+                            <div class="insight_number-container">
+                                <article class="b2">1</article>
+                            </div>
+                            <article class="insight_description b3">
+                                Every estimate you make contains error. A margin of safety is just the gap between your projection and the point where being wrong actually hurts you.
+                            </article>
+                        </div>
+
+                        <!-- INSIGHT 2 -->
+                        <div class="group_insight">
+                            <div class="insight_number-container">
+                                <article class="b2">2</article>
+                            </div>
+                            <article class="insight_description b3">
+                                The bigger the stakes and the less certain your estimates, the larger the buffer should be. Scale the cushion to the cost of being wrong.
+                            </article>
+                        </div>
+
+                    </div>
+
+                    <!-- GROUP 2/2 -->
+                    <div class="container_group">
+
+                        <!-- INSIGHT 3 -->
+                        <div class="group_insight">
+                            <div class="insight_number-container">
+                                <article class="b2">3</article>
+                            </div>
+                            <article class="insight_description b3">
+                                In competitive situations, cutting the buffer feels like an advantage. But efficiency and resilience trade off, and a system with no slack can't absorb surprises.
+                            </article>
+                        </div>
+
+                        <!-- EMPTY SLOT -->
+                        <div class="group_insight"></div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===================================
+            EXAMPLES
+            =================================== -->
+
+            <div class="text_examples">
+                <article class="section-heading">
+                    Examples
+                </article>
+                <div class="examples_group">
+
+                    <div class="example">
+                        <h5>Bridge Engineering</h5>
+                        <article class="b3">
+                            When engineers design a bridge rated for 10,000 pounds, they actually build it to hold 50,000 pounds. Not because they expect that load, but because estimates have error, materials aren't perfect, and unexpected stress happens. The gap between what they planned for and what it can actually handle is the margin of safety. Without it, any surprise becomes a catastrophe.
+                        </article>
+                    </div>
+
+                    <div class="example">
+                        <h5>Project Timelines</h5>
+                        <article class="b3">
+                            If you're planning a project that you estimate will take three weeks, telling your client it'll be done in three weeks leaves zero room for anything to go wrong. Build in a buffer. Not because you're planning to be slow, but because something always comes up, and the buffer is what keeps one unexpected problem from blowing the whole timeline.
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ===================================
+            ORIGIN
+            =================================== -->
+
+            <div class="text_origin">
+                <article class="section-heading">
+                    Origin
+                </article>
+                <article class="b3">
+                    The concept was formalized in investing by Benjamin Graham, widely considered the father of value investing, in his 1949 book The Intelligent Investor. Graham used it to describe the practice of buying assets at a significant discount to their intrinsic value, creating a cushion against errors in valuation. Warren Buffett later called it the three most important words in investing. The principle itself extends well beyond finance into engineering, where it has been standard practice for centuries to design structures and systems to withstand loads significantly greater than the maximum expected demand.
+                </article>
+            </div>
+
+        </div>
+
+        <!-- ===================================
+        FURTHER READING
+        =================================== -->
+
+        <div class="content_further-reading">
+
+            <div class="further-reading_container">
+                <article class="section-heading">
+                    Further Reading
+                </article>
+            </div>
+
+            <div class="further-reading_content">
+
+                <div class="further-reading">
+                    <a href="https://fs.blog/margin-of-safety/" target="_blank" style="text-decoration: none; color: inherit; align-self: stretch;">
+                        <div class="source" style="--source-accent: #836B12;">
+                            <div class="source_text">
+                                <article class="text_header b1">
+                                    "Margin of Safety: The Principle That Keeps You Alive"
+                                </article>
+                                <article class="b3">
+                                    Farnam Street
+                                </article>
+                            </div>
+                            <img src="../assets/45-arrow-black.svg" alt="link to new tab">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ===================================
+        FOOTER
+        =================================== -->
+
+        <footer class="footer">
+            <article class="b3">
+                <a href="https://www.willdraper.me/" target="_blank" style="color: inherit; text-decoration: none;">
+                    Will Draper 2026
+                </a>
+            </article>
+        </footer>
+
+    </section>
+
+</body>
+
+<script>
+    // Restore preference on page load
+    if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.querySelector('.content_mode-container img').src = '../assets/light-mode-white.svg';
+        document.querySelectorAll('img[src*="left-arrow-black"]').forEach(el => el.src = el.src.replace('left-arrow-black.svg', 'left-arrow-white.svg'));
+        document.querySelectorAll('img[src*="45-arrow-black"]').forEach(el => el.src = el.src.replace('45-arrow-black.svg', '45-arrow-white.svg'));
+    }
+
+    const toggleBtn = document.querySelector('.content_mode-container img');
+
+    toggleBtn.addEventListener('click', function () {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+
+        if (isDark) {
+            document.documentElement.removeAttribute('data-theme');
+            localStorage.setItem('theme', 'light');
+            this.src = this.src.replace('light-mode-white.svg', 'dark-mode-white.svg');
+            document.querySelectorAll('img[src*="45-arrow-white"]').forEach(el => el.src = el.src.replace('45-arrow-white.svg', '45-arrow-black.svg'));
+            document.querySelectorAll('img[src*="left-arrow-white"]').forEach(el => el.src = el.src.replace('left-arrow-white.svg', 'left-arrow-black.svg'));
+        } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+            this.src = this.src.replace('dark-mode-white.svg', 'light-mode-white.svg');
+            document.querySelectorAll('img[src*="45-arrow-black"]').forEach(el => el.src = el.src.replace('45-arrow-black.svg', '45-arrow-white.svg'));
+            document.querySelectorAll('img[src*="left-arrow-black"]').forEach(el => el.src = el.src.replace('left-arrow-black.svg', 'left-arrow-white.svg'));
+        }
+    });
+
+    // Subtle hover enlarge
+    document.querySelectorAll('.source').forEach(el => {
+        el.style.transition = 'transform 0.2s ease';
+        el.addEventListener('mouseenter', () => el.style.transform = 'scale(1.01)');
+        el.addEventListener('mouseleave', () => el.style.transform = 'scale(1)');
+    });
+</script>
+
+</html>

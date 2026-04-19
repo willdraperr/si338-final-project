@@ -114,6 +114,7 @@ h5{
     font-style: normal;
     font-weight: 700;
     line-height: var(--fonts-line-height-heading-H5, 20px); /* 133.333% */
+    margin: 0;
 }
 
 .section-heading {

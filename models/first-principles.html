@@ -48,7 +48,7 @@
             </div>
         </div>
         <div class="header-content">
-            <h1 class="mobile-header_text">
+            <h1>
                 First Principles
             </h1>
 
@@ -204,38 +204,28 @@
         </div>
 
             <div class="further-reading_content">
-                <!-- FUTHER READING COMPONET -->
-                <div class="further-reading">
 
-                    <div class="source">
-                        <div class="source_text">
-                            <article class="text_header b1">
-                                “What is First Principles Thinking?”
-                            </article>
-                            <article class="b3">
-                                Farnam Street
-                            </article>
-                        </div>
-                        <img src="../assets/45-arrow-black.svg" alt="link to new tab">
-                    </div>
 
-                </div>
 
                 <!-- FUTHER READING COMPONET -->
                 <div class="further-reading">
-                    
-                    <div class="source">
-                        <div class="source_text">
-                            <article class="text_header b1">
-                                “What is First Principles Thinking?”
-                            </article>
-                            <article class="b3">
-                                Farnam Street
-                            </article>
+                    <a href="https://fs.blog/first-principles/" target="_blank" style="text-decoration: none; color: inherit; align-self: stretch;">
+                        <div class="source" style="--source-accent: #90643C;">
+                            <div class="source_text">
+                                <article class="text_header b1">
+                                    “What is First Principles Thinking?”
+                                </article>
+                                <article class="b3">
+                                    Farnam Street
+                                </article>
+                            </div>
+                            <img src="../assets/45-arrow-black.svg" alt="link to new tab">
                         </div>
-                        <img src="../assets/45-arrow-black.svg" alt="link to new tab">
-                    </div>
+                    </a>
                 </div>
+
+
+
             </div>
 
     </div>
@@ -245,11 +235,13 @@
     FOOTER
     =================================== -->
 
-    <footer class="footer">
-        <article class="b3">
+<footer class="footer">
+    <article class="b3">
+        <a href="https://www.willdraper.me/" target="_blank" style="color: inherit; text-decoration: none;">
             Will Draper 2026
-        </article>
-    </footer>
+        </a>
+    </article>
+</footer>
 
 
 </section>
@@ -258,12 +250,13 @@
 </body>
 
 <script>
-  // Restore preference on page load
-  if (localStorage.getItem('theme') === 'dark') {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    document.querySelector('.content_mode-container img').src = '../assets/light-mode-white.svg';
-  }
-
+  // Switch to dark-mode
+    if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.querySelector('.content_mode-container img').src = '../assets/light-mode-white.svg';
+        document.querySelectorAll('img[src*="left-arrow-black"]').forEach(el => el.src = el.src.replace('left-arrow-black.svg', 'left-arrow-white.svg'));
+        document.querySelectorAll('img[src*="45-arrow-black"]').forEach(el => el.src = el.src.replace('45-arrow-black.svg', '45-arrow-white.svg'));
+    }
   const toggleBtn = document.querySelector('.content_mode-container img');
 
   toggleBtn.addEventListener('click', function () {
@@ -283,6 +276,23 @@
         document.querySelectorAll('img[src*="left-arrow-black"]').forEach(el => el.src = el.src.replace('left-arrow-black.svg', 'left-arrow-white.svg'));
     }
   });
+
+    if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.querySelector('.content_mode-container img').src = '../assets/light-mode-white.svg';
+        document.querySelectorAll('img[src*="left-arrow-black"]').forEach(el => el.src = el.src.replace('left-arrow-black.svg', 'left-arrow-white.svg'));
+        document.querySelectorAll('img[src*="45-arrow-black"]').forEach(el => el.src = el.src.replace('45-arrow-black.svg', '45-arrow-white.svg'));
+    }
+
+    // Subtle hover enlarge
+        document.querySelectorAll('.source').forEach(el => {
+        el.style.transition = 'transform 0.2s ease';
+        el.addEventListener('mouseenter', () => el.style.transform = 'scale(1.01)');
+        el.addEventListener('mouseleave', () => el.style.transform = 'scale(1)');
+    });
+
+    
+
 </script>
 
 </html>

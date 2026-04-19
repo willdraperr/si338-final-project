@@ -163,3 +163,12 @@ body{
 .text_body{
     max-width: var(--card_text_body-min-width, 313px);
 }
+
+.content_mode-container img {
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.content_mode-container img:hover {
+    transform: scale(1.1);
+}
