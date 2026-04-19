@@ -61,18 +61,18 @@ h1{
 
     /* Heading/H1 */
     font-family: var(--fonts-style-heading, "Source Serif 4");
-    font-size: var(--fonts-size-heading-H1, 40px);
+    font-size: var(--fonts-size-heading-H1, 2.5rem);
     font-style: normal;
     font-weight: 900;
-    line-height: var(--fonts-line-height-heading-H1, 52px); /* 130% */
+    line-height: var(--fonts-line-height-heading-H1, 3.25rem); /* 130% */
 }
 
 h1.intro {
     color: var(--grayscale-text-title, #26201E);
     font-family: var(--fonts-style-heading, "Source Serif 4");
-    font-size: var(--fonts-size-heading-H2, 31px);
+    font-size: var(--fonts-size-heading-H2, 1.9375rem);
     font-weight: 500;
-    line-height: var(--fonts-line-height-heading-H2, 41px);
+    line-height: var(--fonts-line-height-heading-H2, 2.5625rem);
     text-align: left;
 }
 
@@ -81,40 +81,39 @@ h2{
 
     /* Heading/H2 */
     font-family: var(--fonts-style-heading, "Source Serif 4");
-    font-size: var(--fonts-size-heading-H2, 31px);
+    font-size: var(--fonts-size-heading-H2, 1.9375rem);
     font-style: normal;
     font-weight: 500;
-    line-height: var(--fonts-line-height-heading-H2, 41px); /* 132.258% */
+    line-height: var(--fonts-line-height-heading-H2, 2.5625rem); /* 132.258% */
 }
 
 h2.text_header {
     font-family: var(--fonts-style-heading, "Source Serif 4");
-    font-size: var(--fonts-size-heading-H4, 19px);
+    font-size: var(--fonts-size-heading-H4, 1.1875rem);
     font-weight: 700;
-    line-height: var(--fonts-line-height-heading-H4, 25px);
+    line-height: var(--fonts-line-height-heading-H4, 1.5625rem);
     color: var(--grayscale-text-title, #26201E);
     margin: 0;
 }
 
 h2.example-heading {
-    font-size: var(--fonts-size-heading-H4, 19px);
+    font-size: var(--fonts-size-heading-H4, 1.1875rem);
     font-weight: 700;
-    line-height: var(--fonts-line-height-heading-H4, 25px);
+    line-height: var(--fonts-line-height-heading-H4, 1.5625rem);
     font-family: var(--fonts-style-heading, "Source Serif 4");
     color: var(--grayscale-text-title, #26201E);
     margin: 0;
 }
-
 
 h3{
     color: var(--grayscale-surface-negative, #26201E);
 
     /* Heading/H3 */
     font-family: var(--fonts-style-heading, "Source Serif 4");
-    font-size: var(--fonts-size-heading-H3, 25px);
+    font-size: var(--fonts-size-heading-H3, 1.5625rem);
     font-style: normal;
     font-weight: 700;
-    line-height: var(--fonts-line-height-heading-H3, 32px); /* 128% */
+    line-height: var(--fonts-line-height-heading-H3, 2rem); /* 128% */
 }
 
 h4{
@@ -125,10 +124,10 @@ h4{
 
     /* Heading/H4 */
     font-family: var(--fonts-style-heading, "Source Serif 4");
-    font-size: var(--fonts-size-heading-H4, 19px);
+    font-size: var(--fonts-size-heading-H4, 1.1875rem);
     font-style: normal;
     font-weight: 700;
-    line-height: var(--fonts-line-height-heading-H4, 25px); /* 131.579% */
+    line-height: var(--fonts-line-height-heading-H4, 1.5625rem); /* 131.579% */
     margin: 0;
 }
 
@@ -137,20 +136,20 @@ h5{
 
     /* Heading/H5 */
     font-family: var(--fonts-style-heading, "Source Serif 4");
-    font-size: var(--fonts-size-heading-H5, 15px);
+    font-size: var(--fonts-size-heading-H5, 0.9375rem);
     font-style: normal;
     font-weight: 700;
-    line-height: var(--fonts-line-height-heading-H5, 20px); /* 133.333% */
+    line-height: var(--fonts-line-height-heading-H5, 1.25rem); /* 133.333% */
     margin: 0;
 }
 
 .section-heading {
     color: var(--grayscale-surface-negative, #26201E);
     font-family: var(--fonts-style-heading, "Source Serif 4");
-    font-size: var(--fonts-size-heading-H3, 25px);
+    font-size: var(--fonts-size-heading-H3, 1.5625rem);
     font-style: normal;
     font-weight: 700;
-    line-height: var(--fonts-line-height-heading-H3, 32px);
+    line-height: var(--fonts-line-height-heading-H3, 2rem);
 }
 
 
@@ -166,20 +165,20 @@ p{
 
     /* Body/B1-Big */
     font-family: var(--fonts-style-body, "General Sans Variable");
-    font-size: var(--fonts-size-heading-H3, 25px);
+    font-size: var(--fonts-size-heading-H3, 1.5625rem);
     font-style: normal;
     font-weight: 500;
-    line-height: var(--fonts-size-heading-H1, 40px); /* 160% */
+    line-height: var(--fonts-size-heading-H1, 2.5rem); /* 160% */
 }
 
 
 .b1 {
     color: var(--grayscale-text-body, #26201E);
     font-family: var(--fonts-style-body, "General Sans Variable");
-    font-size: var(--fonts-size-body-B1, 19px);
+    font-size: var(--fonts-size-body-B1, 1.1875rem);
     font-style: normal;
     font-weight: 500;
-    line-height: var(--fonts-line-height-body-B1, 31px);
+    line-height: var(--fonts-line-height-body-B1, 1.9375rem);
 }
 
 .b2{
@@ -187,10 +186,10 @@ p{
 
     /* Body/B2 */
     font-family: var(--fonts-style-body, "General Sans Variable");
-    font-size: var(--fonts-size-body-B2, 15px);
+    font-size: var(--fonts-size-body-B2, 0.9375rem);
     font-style: normal;
     font-weight: 500;
-    line-height: var(--fonts-line-height-body-B2, 24px); /* 160% */
+    line-height: var(--fonts-line-height-body-B2, 1.5rem); /* 160% */
 
 }
 
@@ -199,10 +198,10 @@ p{
 
     /* Body/B3 */
     font-family: var(--fonts-style-body, "General Sans Variable");
-    font-size: var(--fonts-size-body-B3, 12px);
+    font-size: var(--fonts-size-body-B3, 0.75rem);
     font-style: normal;
     font-weight: 500;
-    line-height: var(--fonts-line-height-body-B3, 19px); /* 158.333% */
+    line-height: var(--fonts-line-height-body-B3, 1.1875rem); /* 158.333% */
 }
 
 /* ===================================
@@ -210,15 +209,15 @@ p{
     =================================== */
 
 .icons{
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
     flex-shrink: 0;
     aspect-ratio: 1/1;
 }
 
 .logo{
-    width: 68px;
-    height: 68px;
+    width: 4.25rem;
+    height: 4.25rem;
 }
 
 /* ===================================
@@ -227,11 +226,9 @@ p{
 
 .footer{
     display: flex;
-    padding: 70px 0 30px 0;
+    padding: 4.375rem 0 1.875rem 0;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 0.625rem;
     align-self: stretch;
-    max-width: 1511px;
-
 }
