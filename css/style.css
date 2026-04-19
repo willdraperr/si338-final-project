@@ -67,6 +67,14 @@ h1{
     line-height: var(--fonts-line-height-heading-H1, 52px); /* 130% */
 }
 
+h1.intro {
+    color: var(--grayscale-text-title, #26201E);
+    font-family: var(--fonts-style-heading, "Source Serif 4");
+    font-size: var(--fonts-size-heading-H2, 31px);
+    font-weight: 500;
+    line-height: var(--fonts-line-height-heading-H2, 41px);
+    text-align: left;
+}
 
 h2{
     color: var(--grayscale-text-title, #26201E);
@@ -78,6 +86,25 @@ h2{
     font-weight: 500;
     line-height: var(--fonts-line-height-heading-H2, 41px); /* 132.258% */
 }
+
+h2.text_header {
+    font-family: var(--fonts-style-heading, "Source Serif 4");
+    font-size: var(--fonts-size-heading-H4, 19px);
+    font-weight: 700;
+    line-height: var(--fonts-line-height-heading-H4, 25px);
+    color: var(--grayscale-text-title, #26201E);
+    margin: 0;
+}
+
+h2.example-heading {
+    font-size: var(--fonts-size-heading-H4, 19px);
+    font-weight: 700;
+    line-height: var(--fonts-line-height-heading-H4, 25px);
+    font-family: var(--fonts-style-heading, "Source Serif 4");
+    color: var(--grayscale-text-title, #26201E);
+    margin: 0;
+}
+
 
 h3{
     color: var(--grayscale-surface-negative, #26201E);
@@ -205,4 +232,6 @@ p{
     align-items: flex-start;
     gap: 10px;
     align-self: stretch;
+    max-width: 1511px;
+
 }

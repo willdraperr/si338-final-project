@@ -17,6 +17,7 @@
     --model_header-margin: 20px;
     --model_illustration-size: 346px;
     --model_insight_number-container-size: 24px;
+    --model_header-padding: 30px;
 
     /* fonts / size / heading */
     --fonts-size-heading-H1: 2.5rem;      /* 40px */
@@ -64,7 +65,7 @@
         --model_header-margin: 20px;
         --model_illustration-size: 397px;
         --model_insight_number-container-size: 30px;
-        --model_header-padding: 100px;
+        --model_header-padding: 30px;
 
         /* fonts / size / heading */
         --fonts-size-heading-H1: 3.125rem;    /* 50px */
@@ -113,7 +114,7 @@
         --model_header-margin: 140px;
         --model_illustration-size: 521px;
         --model_insight_number-container-size: 38px;
-        --model_header-padding: 100px;
+        --model_header-padding: 30px;
 
         /* fonts / size / heading */
         --fonts-size-heading-H1: 3.875rem;    /* 62px */
